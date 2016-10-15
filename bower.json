@@ -1,0 +1,26 @@
+{
+  "name": "alpigroup",
+  "description": "Alpi group web site",
+  "main": "app/scripts/main.js",
+  "authors": [
+    "falborgh"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "alpigroup"
+  ],
+  "homepage": "app/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "materialize": "^0.97.7",
+    "material-design-lite": "^1.2.1"
+  }
+}
