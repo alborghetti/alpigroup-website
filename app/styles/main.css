@@ -1,11 +1,190 @@
-.alpi-card-wide.mdl-card {
-  width: 512px;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-.alpi-card-wide > .mdl-card__title {
-  color: #fff;
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* UTILITIES */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+
+.avatar {
   height: 200px;
-  background: url('../images/alpigroup.jpeg') center / cover;
+  width: 200px;
+  margin: 0 auto 2em;
 }
-.alpi-card-wide > .mdl-card__menu {
-  color: #fff;
+
+.avatar-img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
+
+.drawer-text {
+  padding: 1em;
+  text-align: center;
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+  height: 100vh;
+  /* IE11 doesn't like min-height */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(63, 81, 181, 0.6);
+  background-image: linear-gradient(rgba(63, 81, 181, 0.3), rgba(63, 81, 181, 0.3)), url("/images/chi_siamo_hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.hero-text {
+  color: white;
+  margin: auto;
+}
+
+@media screen and (max-width: 580px) {
+  .hero-text p {
+    white-space: pre-line;
+  }
+}
+
+.hero__text-button {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* ABOUT ALPI INTRO + CARDS */
+
+.intro-section,
+.cards-section {
+  max-width: 960px;
+}
+
+
+/* ABOUT ALPI INTRO */
+
+.intro-section {
+  padding: 5em 2em 5em;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+}
+
+.circle-container {
+  width: 100%;
+  min-height: 100px;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.circle-container .circle {
+  height: 16px;
+  width: 16px;
+  background-color: #ffab40;
+  border-radius: 50%;
+  margin: 0 3px 9px;
+}
+
+.topics-container {
+  padding: 2em 0;
+}
+
+.topics-container .topic {
+  font-size: 20px;
+  margin: 0 2px 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .topics-container .topic {
+    margin-bottom: 0.5em;
+  }
+}
+
+.embedded-img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+
+
+/* CARDS SECTION */
+
+
+
+
+/* FULLWIDTH BACKGROUND SECTION */
+
+.fullwidth-panel {
+  color: white;
+  background-color: rgba(156, 39, 176, 0.6);
+}
+
+.fullwidth-panel p {
+  max-width: 640px;
+  margin: auto;
+}
+
+.quote-panel {
+  background-image: linear-gradient(rgba(63, 81, 181, 0.5), rgba(63, 81, 181, 0.5)), url('/images/chi_siamo_end.jpg');
+  background-position: center 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 2em 2em;
+  display: flex;
+  align-content: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+  .quote-panel {
+    background-position: center 0;
+    padding: 6em 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quote-panel {
+    background-position: center 8%;
+    padding: 10em 2em 8em;
+  }
+}
+
+
